@@ -16,11 +16,12 @@ function App() {
 	return (
 		<Switch>
 			<Route exact path="/">
-				<Header type={"Home"} />
+				<Header />
+				<Home />
 			</Route>
 		</Switch>
 
-		
+
 	);
 }
 
