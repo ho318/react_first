@@ -4,28 +4,23 @@ import { useState, useRef, useEffect, useContext, useCallback, useMemo } from 'r
 
 
 function Header() {
-    const [state, setState] = useState(""); // useState 훅
-    const myRef = useRef(null); // useRef 훅
+    const [state, setState] = useState("");
+    const myRef = useRef(null);
 
     useEffect(() => {
-        // useEffect 훅
-        // 컴포넌트가 마운트되거나 업데이트될 때 실행될 코드
         return () => {
-            // 언마운트되기 전이나 업데이트 직전에 실행될 코드
         };
-    }, [""]); // dependencies 배열에 있는 값이 변경될 때만 useEffect 실행
+    }, [""]);
 
-    const contextValue = useContext(""); // useContext 훅
+    const contextValue = useContext("");
 
     const memoizedCallback = useCallback(
         () => {
-            // useCallback 훅
-            // 함수가 새로 생성되지 않고 이전에 생성한 함수를 재사용함
         },
         [""]
     );
 
-    const memoizedValue = useMemo(() => (""), [""]); // useMemo 훅
+    const memoizedValue = useMemo(() => (""), [""]);
 
     return (
         <header id="header">
